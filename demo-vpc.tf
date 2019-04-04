@@ -10,6 +10,7 @@ resource "aws_subnet" "demo-public-subnet" {
   vpc_id  = "${aws_vpc.demo-vpc.id}"
   cidr_block = "10.0.1.0/24"
 
+  
   tags = {
     Name = "demo-public-subnet"
   }
